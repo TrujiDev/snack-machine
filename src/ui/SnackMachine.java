@@ -30,7 +30,7 @@ public class SnackMachine {
         while (!exit) {
             try {
                 int option = showMenu(console);
-                exit = executeOptions(option, console, snackSrvice);
+                exit = executeOptions(option, console, snackService);
             } catch (Exception e) {
                 System.out.println("An error occurred: " + e.getMessage());
             }
